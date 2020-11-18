@@ -3,7 +3,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTable } from '@angular/material/table';
 import { Product } from '../product.model';
-import { ProductService } from '../product.service';
+import { ProductService } from './../product.service';
 import { ProductReadDataSource } from './product-read-datasource';
 
 @Component({
@@ -16,24 +16,22 @@ export class ProductReadComponent implements AfterViewInit, OnInit {
   @ViewChild(MatSort) sort: MatSort;
   @ViewChild(MatTable) table: MatTable<Product>;
   dataSource: ProductReadDataSource;
-  private productService: ProductService;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
   displayedColumns = ['id', 'name', 'price'];
 
-  /*ngOnInit() {
-    this.dataSource = new ProductReadDataSource();
-  }*/
+  constructor(private productService: ProductService){}
 
   ngOnInit(): void {
-    this.productService.read().subscribe((products: Product[]) => {
-      this.dataSource = new ProductReadDataSource(products);
-    });
+    this.dataSource = new ProductReadDataSource([]);
   }
 
   ngAfterViewInit() {
-    this.dataSource.sort = this.sort;
-    this.dataSource.paginator = this.paginator;
-    this.table.dataSource = this.dataSource;
+    this.productService.read().subscribe((products: Product[]) => {
+      this.dataSource = new ProductReadDataSource(products);
+      this.dataSource.sort = this.sort;
+      this.dataSource.paginator = this.paginator;
+      this.table.dataSource = this.dataSource;
+    });
   }
 }

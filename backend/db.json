@@ -1,7 +1,24 @@
 {
-	"products": [
-		{"id": 1, "name": "prod1", "price": 1234.99},
-		{"id": 2, "name": "prod2", "price": 567.88},
-		{"id": 3, "name": "prod3", "price": 39.20}
-	]
+  "products": [
+    {
+      "id": 1,
+      "name": "prod1",
+      "price": 1234.99
+    },
+    {
+      "id": 2,
+      "name": "prod2",
+      "price": 567.88
+    },
+    {
+      "id": 3,
+      "name": "prod3",
+      "price": 39.2
+    },
+    {
+      "name": "romeme",
+      "price": "10",
+      "id": 4
+    }
+  ]
 }
