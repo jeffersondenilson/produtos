@@ -5,11 +5,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
-  selector: 'app-product-create',
-  templateUrl: './product-create.component.html',
-  styleUrls: ['./product-create.component.css']
+  selector: 'app-product-form',
+  templateUrl: './product-form.component.html',
+  styleUrls: ['./product-form.component.css']
 })
-export class ProductCreateComponent implements OnInit {
+export class ProductFormComponent implements OnInit {
   
   product: Product = {
     name: '',

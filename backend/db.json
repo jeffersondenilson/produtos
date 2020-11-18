@@ -16,9 +16,29 @@
       "price": 39.2
     },
     {
-      "name": "romeme",
-      "price": "10",
+      "name": "prod4",
+      "price": "100.44",
       "id": 4
+    },
+    {
+      "name": "prod5",
+      "price": 18.5,
+      "id": 5
+    },
+    {
+      "name": "prod6",
+      "price": 122.45,
+      "id": 6
+    },
+    {
+      "name": "prod7",
+      "price": 45.3,
+      "id": 7
+    },
+    {
+      "name": "prod8",
+      "price": 0.5,
+      "id": 8
     }
   ]
 }

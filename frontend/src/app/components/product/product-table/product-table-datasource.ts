@@ -6,11 +6,11 @@ import { Observable, of as observableOf, merge } from 'rxjs';
 import { Product } from './../product.model';
 
 /**
- * Data source for the ProductRead view. This class should
+ * Data source for the ProductTable view. This class should
  * encapsulate all logic for fetching and manipulating the displayed data
  * (including sorting, pagination, and filtering).
  */
-export class ProductReadDataSource extends DataSource<Product> {
+export class ProductTableDataSource extends DataSource<Product> {
   data: Product[];
   paginator: MatPaginator;
   sort: MatSort;

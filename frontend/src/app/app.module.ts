@@ -14,15 +14,15 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
-import { ProductCrudComponent } from './views/product-crud/product-crud.component';
-import { ProductCreateComponent } from './components/product/product-create/product-create.component';
+import { ProductsComponent } from './views/products/products.component';
+import { ProductFormComponent } from './components/product/product-form/product-form.component';
 import { HeaderComponent } from './components/template/header/header.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
 
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { ProductReadComponent } from './components/product/product-read/product-read.component';
+import { ProductTableComponent } from './components/product/product-table/product-table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
@@ -38,9 +38,9 @@ registerLocaleData(localePt);
     HeaderComponent,
     NavComponent,
     HomeComponent,
-    ProductCrudComponent,
-    ProductCreateComponent,
-    ProductReadComponent
+    ProductsComponent,
+    ProductFormComponent,
+    ProductTableComponent
   ],
   imports: [
     BrowserModule,

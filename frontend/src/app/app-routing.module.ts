@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './views/home/home.component';
-import { ProductCrudComponent } from './views/product-crud/product-crud.component';
-import { ProductCreateComponent } from './components/product/product-create/product-create.component';
+import { ProductsComponent } from './views/products/products.component';
+import { ProductFormComponent } from './components/product/product-form/product-form.component';
 
 const routes: Routes = [
 	{
@@ -11,13 +11,13 @@ const routes: Routes = [
 		component: HomeComponent
 	}, {
 		path: 'products',
-		component: ProductCrudComponent
+		component: ProductsComponent
 	}, {
 		path: 'products/create',
-		component: ProductCreateComponent
+		component: ProductFormComponent
 	}, {
 		path: 'products/update/:id',
-		component: ProductCreateComponent
+		component: ProductFormComponent
 	}
 ];
 
