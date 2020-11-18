@@ -1,18 +1,22 @@
 <mat-card>
-	<mat-card-title>Novo Produto</mat-card-title>
+	<mat-card-title>
+		{{ product.id ? 'Atualizar Produto' : 'Novo Produto' }}
+	</mat-card-title>
 
 	<form>
 		<mat-form-field>
-			<input matInput placeholder="Nome" 
+			<input matInput 
+				placeholder="Nome" type="text" autocomplete="off" 
 				[(ngModel)]="product.name" name="name">
 		</mat-form-field>
 		<mat-form-field>
-			<input matInput placeholder="Preço (R$)" 
+			<input matInput 
+				placeholder="Preço (R$)" type="number" autocomplete="off" 
 				[(ngModel)]="product.price" name="price">
 		</mat-form-field>
 	</form>
 
-	<button mat-raised-button color="primary" (click)="createProduct()">
+	<button mat-raised-button color="primary" (click)="submit()">
 		Salvar
 	</button>
 	

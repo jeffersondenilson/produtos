@@ -66,7 +66,7 @@ export class ProductReadDataSource extends DataSource<Product> {
     return data.sort((a, b) => {
       const isAsc = this.sort.direction === 'asc';
       switch (this.sort.active) {
-        case 'price': return compare(a.price, b.price, isAsc);
+        case 'price': return compare(Number(a.price), Number(b.price), isAsc);
         case 'name': return compare(a.name, b.name, isAsc);
         case 'id': return verifyIdAndCompare(a, b, isAsc);
         default: return 0;
