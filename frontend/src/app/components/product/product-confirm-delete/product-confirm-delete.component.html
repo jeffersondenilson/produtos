@@ -1,0 +1,24 @@
+<mat-card>
+	<mat-card-title>
+		Excluir produto?
+	</mat-card-title>
+
+	<mat-card class="content">
+		<span class="header">Id</span>
+		<span class="header">Nome</span>
+		<span class="header">Preço</span>
+		<span>{{ product?.id }}</span>
+		<span>{{ product?.name }}</span>
+		<span>{{ product?.price | currency: 'BRL' }}</span>
+	</mat-card>
+
+	<mat-card-actions>
+		<button mat-raised-button color="warn" (click)="confirm()">
+			Excluir
+		</button>
+		
+		<button mat-raised-button color="secondary" (click)="cancel()">
+			Cancelar
+		</button>
+	</mat-card-actions>
+</mat-card>

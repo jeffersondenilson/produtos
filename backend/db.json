@@ -1,11 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "prod1",
-      "price": 1234.99
-    },
-    {
       "id": 2,
       "name": "prod2",
       "price": 567.88
@@ -24,21 +19,6 @@
       "name": "prod5",
       "price": 18.5,
       "id": 5
-    },
-    {
-      "name": "prod6",
-      "price": 122.45,
-      "id": 6
-    },
-    {
-      "name": "prod7",
-      "price": 45.3,
-      "id": 7
-    },
-    {
-      "name": "prod8",
-      "price": 0.5,
-      "id": 8
     }
   ]
 }

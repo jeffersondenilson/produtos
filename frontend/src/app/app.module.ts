@@ -29,6 +29,7 @@ import { MatSortModule } from '@angular/material/sort';
 
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
+import { ProductConfirmDeleteComponent } from './components/product/product-confirm-delete/product-confirm-delete.component';
 
 registerLocaleData(localePt);
 
@@ -40,7 +41,8 @@ registerLocaleData(localePt);
     HomeComponent,
     ProductsComponent,
     ProductFormComponent,
-    ProductTableComponent
+    ProductTableComponent,
+    ProductConfirmDeleteComponent
   ],
   imports: [
     BrowserModule,

@@ -16,11 +16,13 @@
 		</mat-form-field>
 	</form>
 
-	<button mat-raised-button color="primary" (click)="submit()">
-		Salvar
-	</button>
-	
-	<button mat-raised-button color="secondary" (click)="cancel()">
-		Cancelar
-	</button>
+	<mat-card-actions>
+		<button mat-raised-button color="primary" (click)="submit()">
+			Salvar
+		</button>
+		
+		<button mat-raised-button color="secondary" (click)="cancel()">
+			Cancelar
+		</button>
+	</mat-card-actions>
 </mat-card>
