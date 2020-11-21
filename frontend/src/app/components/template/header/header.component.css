@@ -10,10 +10,37 @@
 	text-decoration: none;
 }
 
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	display: none;
+}
+
 .logo a {
-	justify-content: center;
+	margin: auto;
 }
 
 .logo img {
 	max-height: 50px;
+}
+
+@media(max-width: 600px){
+	.header {
+		grid-template-columns: 100px auto;
+	}
+
+	.logo button {
+		display: block
+	}
+
+	.logo a {
+		display: none;
+	}
 }

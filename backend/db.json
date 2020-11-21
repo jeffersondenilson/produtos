@@ -14,11 +14,6 @@
       "name": "prod4",
       "price": "100.44",
       "id": 4
-    },
-    {
-      "name": "prod5",
-      "price": 18.5,
-      "id": 5
     }
   ]
 }

@@ -1,3 +1,4 @@
+import { NavService } from './../nav/nav.service';
 import { HeaderService } from './header.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private headerService: HeaderService) { }
+  constructor(private headerService: HeaderService, private navService: NavService) { }
 
   ngOnInit(): void {
   }
@@ -23,5 +24,9 @@ export class HeaderComponent implements OnInit {
 
   get routeUrl(): string {
     return this.headerService.headerData.routeUrl;
+  }
+
+  toggleSidenav(): void {
+    this.navService.isOpened = !this.navService.isOpened;
   }
 }
