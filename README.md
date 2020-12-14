@@ -2,6 +2,9 @@
 
 Aplicação que simula cadastro de produtos, com Angular e json-server.
 
+![Screenshot1](https://i.imgur.com/yRBymtZ.png)
+![Screenshot2](https://i.imgur.com/w1DUKrR.png)
+
 ## Instalação
 ```bash
 git clone https://github.com/jeffersondenilson/produtos.git
@@ -17,18 +20,15 @@ npm install
 ## Uso
 * **Iniciar servidor:**
 ```bash
-cd backend
-npm start
+npm run server
 ```
 
 * **Iniciar cliente:**
 ```bash
-cd frontend
-npm start
+npm run client
 ```
 
 * **Gerar build de produção:**
 ```bash
-cd frontend
 npm run build
 ```
