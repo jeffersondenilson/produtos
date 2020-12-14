@@ -1,0 +1,23 @@
+{
+  "name": "produtos",
+  "version": "1.0.0",
+  "description": "Aplicação que simula cadastro de produtos, com Angular e json-server.",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm start --prefix frontend",
+    "server": "npm start --prefix backend",
+    "build": "npm run build --prefix frontend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffersondenilson/produtos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffersondenilson/produtos/issues"
+  },
+  "homepage": "https://github.com/jeffersondenilson/produtos#readme"
+}
