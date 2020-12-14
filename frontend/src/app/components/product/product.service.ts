@@ -4,13 +4,14 @@ import { HttpClient } from '@angular/common/http';
 import { Product } from './product.model';
 import { EMPTY, Observable } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
+import { environment } from './../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-	baseUrl: string = 'http://localhost:3001/products';
+	baseUrl: string = environment.baseApiUrl;
 
   constructor(private snackbar: MatSnackBar, private http: HttpClient) { }
 
