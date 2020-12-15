@@ -22,6 +22,9 @@ const routes: Routes = [
 	}, {
 		path: 'products/delete/:id',
 		component: ProductConfirmDeleteComponent
+	}, {
+		path: '**',
+		redirectTo: '/'
 	}
 ];
 
